@@ -1,0 +1,23 @@
+.page-header {
+  background-color: $white;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__img-logo {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.page-header__burger-button {
+  background-image: url("/img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-color: $white;
+  padding: 0;
+  margin-right: 23px;
+  border: none;
+  width: 18px;
+  height: 18px;
+}

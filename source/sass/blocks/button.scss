@@ -1,0 +1,12 @@
+.button {
+  border: none;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+}
