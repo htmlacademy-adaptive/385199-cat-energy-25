@@ -2,11 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__img-logo" src="img/logo-mobile.svg" width="192" height="38" alt="Логотип CAT ENERGY">
       </a>
       <button class="page-header__burger-button" type="button" aria-label="Открыть\закрыть меню"></button>
@@ -48,7 +52,7 @@
               <dd class="product__feature-item-description">700 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -70,7 +74,7 @@
               <dd class="product__feature-item-description">1000 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -92,7 +96,7 @@
               <dd class="product__feature-item-description">700 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -114,7 +118,7 @@
               <dd class="product__feature-item-description">1000 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -134,7 +138,7 @@
             <dt class="product__feature-item-parameter">Цена</dt>
             <dd class="product__feature-item-description">400 <span>p.</span></dd>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -156,7 +160,7 @@
               <dd class="product__feature-item-description">700 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -178,7 +182,7 @@
               <dd class="product__feature-item-description">400 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product">
           <a href="#">
@@ -200,13 +204,13 @@
               <dd class="product__feature-item-description">400 <span>p.</span></dd>
             </div>
           </dl>
-          <button class="product-buy" type="button">Заказать</button>
+          <button class="product-buy button" type="button">Заказать</button>
         </article>
         <article class="product product--more">
           <h2 class="visually-hidden">Показать еще</h2>
           <span class="product__title product__title--more">Показать еще 100500 товаров!</span>
           <p class="product__text product__text--more">На самом деле вкусов гораздо больше!</p>
-          <a class="product__buy" href="#">Показать все</a>
+          <a class="product__all button" href="#">Показать все</a>
         </article>
       </section>
       <section class="add-catalog">
@@ -219,7 +223,7 @@
                 <dt class="add-product__item-parameter">1 упаковка (100 г)</dt>
                 <dd class="add-product__item-price">200 <span>p.</span></dd>
               </dl>
-              <a class="add-product__buy product-buy" href="#">Заказать</a>
+              <a class="add-product__buy product__buy button" href="#">Заказать</a>
             </article>
           </li>
           <li class="add-catalog__item">
@@ -229,7 +233,7 @@
                 <dt class="add-product__item-parameter">5 литров</dt>
                 <dd class="add-product__item-price">50 <span>p.</span></dd>
               </dl>
-              <a class="add-product__buy product-buy" href="#">Заказать</a>
+              <a class="add-product__buy product__buy button" href="#">Заказать</a>
             </article>
           </li>
           <li class="add-catalog__item">
@@ -239,7 +243,7 @@
                 <dt class="add-product__item-parameter">1 литр</dt>
                 <dd class="add-product__item-description">100 <span>p.</span></dd>
               </dl>
-              <a class="add-product__buy product-buy" href="#">Заказать</a>
+              <a class="add-product__buy product__buy button" href="#">Заказать</a>
             </article>
           </li>
           <li class="add-catalog__item">
@@ -249,7 +253,7 @@
                 <dt class="add-product__item-parameter">1 упаковка (30 г)</dt>
                 <dd class="add-product__item-description">300 <span>p.</span></dd>
               </dl>
-              <a class="add-product__buy product-buy" href="#">Заказать</a>
+              <a class="add-product__buy product__buy button" href="#">Заказать</a>
             </article>
           </li>
         </ul>
@@ -269,7 +273,7 @@
       </section>
     </main>
     <footer class="footer">
-      <a>
+      <a href="index.html">
         <img class="footer__logo" src="/img/logo-footer.svg" width="128" height="24" alt="Логотип CAT ENERGY">
       </a>
       <ul class="social">
