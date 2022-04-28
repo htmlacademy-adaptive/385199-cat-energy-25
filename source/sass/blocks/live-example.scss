@@ -1,6 +1,12 @@
 .live-example {
   background-color: $spec-grey-4;
   padding: 0 20px 0 20px;
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .live-example__tittle {
@@ -11,6 +17,10 @@
   color: $black;
   margin: 0;
   padding: 27px 0 33px 0;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 .live-example__description {
@@ -21,6 +31,16 @@
   line-height: 18px;
   color: $dark-grey;
   margin: 0;
+}
+
+.live-example__statlist {
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .live-example__statlist-parameter {
@@ -53,9 +73,13 @@
   text-transform: uppercase;
   color: $black;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-flex;
+  }
 }
 
-.live-example__statlist-img {
+.live-example__img {
   margin-bottom: 23px;
 }
 

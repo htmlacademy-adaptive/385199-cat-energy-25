@@ -6,6 +6,10 @@
   border-bottom: 1px solid $spec-grey-3;
   margin: 32px 0 22px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__item {

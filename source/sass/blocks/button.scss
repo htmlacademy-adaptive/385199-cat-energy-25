@@ -9,4 +9,9 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    height: 54px;
+  }
 }

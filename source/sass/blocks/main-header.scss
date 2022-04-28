@@ -1,8 +1,12 @@
 .main-header {
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  width: 320px;
+  background-image: url("/img/index-background-mobile@1x.png");
   background-repeat: no-repeat;
   margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .main-header__title {
@@ -15,6 +19,16 @@
   margin: 0;
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    color: $black;
+    margin-left: 117px;
+    padding-top: 62px;
+    padding-bottom: 41px;
+  }
 }
 
 .main-header__slogan {
@@ -27,6 +41,14 @@
   color: $white;
   margin: 0;
   padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    color: $black;
+    margin-left: 119px;
+  }
 }
 
 .main-header__image {
@@ -35,8 +57,9 @@
 }
 
 .main-header__button {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 292px;
+    left: 120px;
+  }
 }
