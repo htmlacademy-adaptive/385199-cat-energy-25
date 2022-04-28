@@ -2,6 +2,16 @@
   background-color: $white;
   width: 320px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .page-header__img-logo {
@@ -12,12 +22,17 @@
 }
 
 .page-header__burger-button {
-  background-image: url("/img/icon-close.svg");
+  background-image: url("/img/icon-burger-menu.svg");
   background-repeat: no-repeat;
   background-color: $white;
   padding: 0;
-  margin-right: 23px;
+  margin-top: 24px;
+  margin-right: 20px;
   border: none;
-  width: 18px;
+  width: 24px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

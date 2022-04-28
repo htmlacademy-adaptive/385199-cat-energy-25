@@ -1,5 +1,10 @@
 .programs {
   margin: 22px 20px 20px 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -14,13 +19,20 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
+  padding: 19px 14px;
 }
 
-.programs__title::before {
+.programs__title--slim-cat::before {
   content: url("/img/icon-cat-slim.svg");
   width: 50px;
   height: 53px;
-  padding: 22px;
+  padding: 19px 14px;
+}
+
+.programs__title--mass-cat::before {
+  content: url("/img/icon-cat-mass.svg");
+  width: 67px;
+  height: 50px;
 }
 
 .programs__text {

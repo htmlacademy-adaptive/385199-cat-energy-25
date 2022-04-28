@@ -1,6 +1,17 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__wrapper {
   padding: 19px 19px 22px 19px;
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: $white;
+    top: 50px;
+    left: 50px;
+  }
 }
 
 .contacts__wrapper--bgcolor {

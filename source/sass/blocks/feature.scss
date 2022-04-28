@@ -14,11 +14,25 @@
 .feature__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .feature__item {
   list-style: none;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex: 0 1 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 25%;
+  }
 }
 
 .feature__description {
