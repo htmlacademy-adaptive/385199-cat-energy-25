@@ -1,3 +1,10 @@
+.add-product {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .add-product__title {
   font-style: normal;
   font-weight: 400;
@@ -13,4 +20,14 @@
   font-size: 14px;
   line-height: 14px;
   color: $dark-grey;
+}
+
+.add-product__buy {
+  @media (min-width: $tablet-width) {
+    flex: 0 1 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 auto;
+  }
 }

@@ -4,6 +4,7 @@
 
 .contacts__wrapper {
   padding: 19px 19px 22px 19px;
+  background-color: $grey;
   display: flex;
 
   @media (min-width: $desktop-width) {
@@ -12,10 +13,6 @@
     top: 50px;
     left: 50px;
   }
-}
-
-.contacts__wrapper--bgcolor {
-  background-color: $grey;
 }
 
 .contacts__slogan {

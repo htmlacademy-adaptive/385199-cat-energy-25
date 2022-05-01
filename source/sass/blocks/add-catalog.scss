@@ -1,8 +1,15 @@
 .add-catalog {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .add-catalog__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -13,4 +20,8 @@
   line-height: 24px;
   text-align: center;
   color: $black;
+
+  @media (min-width: $desktop-width) {
+    flex: 0 1 100%;
+  }
 }
