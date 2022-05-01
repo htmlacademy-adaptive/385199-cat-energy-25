@@ -1,3 +1,14 @@
 .catalog {
   margin: 0  auto;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 63px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 63px 80px;
+  }
 }
