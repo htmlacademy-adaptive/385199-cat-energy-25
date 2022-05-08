@@ -7,6 +7,24 @@
   @media (min-width: $tablet-width) {
     background-image: none;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 585px;
+  }
+}
+
+.main-header::before {
+  @media (min-width: $desktop-width) {
+    content: url("/img/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 50%;
+    margin-top: -100px;
+  }
 }
 
 .main-header__title {
@@ -28,6 +46,10 @@
     margin-left: 117px;
     padding-top: 62px;
     padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 430px;
   }
 }
 
@@ -57,9 +79,12 @@
 }
 
 .main-header__button {
+  margin-top: 3px;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 292px;
     left: 120px;
   }
 }
+

@@ -1,38 +1,26 @@
 .page-header {
-  background-color: $white;
   width: 320px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    width: $desktop-width;
+    padding: 0 110px 0 110px;
+    background-color: none;
   }
+}
+
+.page-header__logo {
+  min-height: 65px;
 }
 
 .page-header__img-logo {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 20px;
-  margin-right: 10px;
-}
-
-.page-header__burger-button {
-  background-image: url("/img/icon-burger-menu.svg");
-  background-repeat: no-repeat;
-  background-color: $white;
-  padding: 0;
-  margin-top: 24px;
-  margin-right: 20px;
-  border: none;
-  width: 24px;
-  height: 18px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+  margin: 10px 10px 20px 12px;
 }
