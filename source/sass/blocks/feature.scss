@@ -27,7 +27,7 @@
 }
 
 .feature__list {
-  margin: 40px 0 44px 0;
+  margin: 40px 0 49px 0;
   padding: 0;
   counter-reset: program;
 
@@ -40,7 +40,7 @@
 .feature__item {
   position: relative;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   display: flex;
   flex: 0 1 50%;
   counter-increment: program;
