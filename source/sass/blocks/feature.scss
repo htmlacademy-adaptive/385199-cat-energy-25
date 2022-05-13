@@ -1,5 +1,15 @@
 .feature {
-  margin: 27px 20px 27px 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    border-bottom: 1px solid $spec-grey-3;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    border: none;
+  }
 }
 
 .feature__title {
@@ -8,12 +18,18 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
-  margin-top: 38px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .feature__list {
-  margin: 0;
+  margin: 40px 0 49px 0;
   padding: 0;
+  counter-reset: program;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -22,16 +38,46 @@
 }
 
 .feature__item {
+  position: relative;
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex: 0 1 50%;
+  counter-increment: program;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex: 0 1 50%;
+    width: 250px;
+    padding: 0 130px 37px 0;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     flex: 0 1 25%;
+    width: 245px;
+    padding: 0 130px 37px 0;
+  }
+}
+
+.feature__item::after {
+  @media (min-width: $tablet-width) {
+    content: counter(program);
+    position: absolute;
+    top: -107px;
+    left: 116px;
+    font-size: 280px;
+    color: $grey;
+    z-index: -1;
+  }
+}
+
+.feature__item::before {
+  @media (min-width: $tablet-width) {
+    content: url("/img/advantage-alarm-tablet.svg");
+    position: absolute;
+    background-color: $green;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
   }
 }
 
@@ -42,15 +88,25 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-grey;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 110px 0 51px 0;
+  }
 }
 
 .feature__description::before {
-  content: url("/img/advantage-leaf@1x.png");
+  content: url("/img/advantage-leaf@1x.svg");
   background-color: $green;
   width: 60px;
   height: 60px;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
